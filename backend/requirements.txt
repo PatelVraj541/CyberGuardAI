@@ -1,0 +1,26 @@
+# ============================================
+# CyberGuard AI — Python Dependencies
+# ============================================
+
+# --- Web Framework ---
+flask==3.1.1
+flask-cors==5.0.1
+
+# --- Environment Variables ---
+python-dotenv==1.1.0
+
+# --- Database ---
+# mysql-connector-python==9.3.0    # uncomment when using MySQL
+# SQLAlchemy==2.0.41               # uncomment if you want ORM
+
+# --- Packet Capture ---
+scapy==2.6.1
+
+# --- Machine Learning ---
+scikit-learn==1.7.0
+numpy==2.3.0
+pandas==2.3.0
+joblib==1.5.1
+
+# --- Logging / Utilities ---
+colorama==0.4.6
