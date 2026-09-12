@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  <div class="login-container">
+    <div class="login-card">
+      <img src="{{ url_for('static', filename='img/logo_light.png') }}" alt="CyberGuard AI" class="login-logo logo_light">
+      <img src="{{ url_for('static', filename='img/logo_dark.png') }}" alt="CyberGuard AI" class="login-logo logo_dark">
+    <h1>Login</h1>
+    <form method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" required placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required placeholder="Enter your password">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    </div>
+  </div>
+{% endblock %}

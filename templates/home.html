@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home - CyberGuard AI{% endblock %}
+
+{% block content %}
+    <img src="{{ url_for('static', filename='img/logo_light.png') }}" alt="CyberGuard AI Logo" class="logo_home_light">
+    <img src="{{ url_for('static', filename='img/logo_dark.png') }}" alt="CyberGuard AI Logo" class="logo_home_dark">
+    <h1 class="h1_home">System Active - Monitoring live</h1>
+    <p class="p_home">An AI-powered network intrusion detection system.</p>
+    <div style="text-align: center; margin-top: 20px;">
+        <button href="{{ url_for('login') }}" class="btn btn-primary">Login to continue</button>
+    </div>
+{% endblock %}
